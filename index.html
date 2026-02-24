@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Divya Dharshini U | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#fff5f7;   /* soft blush */
+    color:#3f3f46;
+    line-height:1.6;
+}
+
+/* ===== NAVBAR ===== */
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 80px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+nav h2{
+    font-size:18px;
+    font-weight:600;
+    color:#be185d;  /* rose */
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#52525b;
+    font-size:14px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ec4899;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-top:80px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:42px;
+    font-weight:700;
+    color:#be185d;
+}
+
+.hero p{
+    margin-top:12px;
+    font-size:18px;
+    color:#71717a;
+}
+
+/* ===== BUTTONS ===== */
+
+.button-group{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    padding:10px 24px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.primary-btn{
+    background:#ec4899;
+    color:white;
+}
+
+.primary-btn:hover{
+    background:#db2777;
+}
+
+.secondary-btn{
+    border:1px solid #ec4899;
+    color:#ec4899;
+    background:white;
+}
+
+.secondary-btn:hover{
+    background:#ffe4ec;
+}
+
+/* ===== SECTIONS ===== */
+
+section{
+    padding:80px 80px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:26px;
+    margin-bottom:40px;
+    font-weight:600;
+    color:#be185d;
+}
+
+.content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    color:#52525b;
+}
+
+/* ===== GRID ===== */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 18px rgba(236,72,153,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h3{
+    font-size:17px;
+    margin-bottom:10px;
+    color:#be185d;
+}
+
+.card p{
+    font-size:14px;
+    color:#71717a;
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#ffffff;
+    font-size:14px;
+    color:#71717a;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+    nav{
+        padding:15px 20px;
+    }
+
+    section{
+        padding:60px 20px;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Divya Dharshini U</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Divya Dharshini U</h1>
+    <p>Computer Science Engineering Student | Java Developer | AI Enthusiast</p>
+
+    <div class="button-group">
+        <a href="DIVYA Resume.pdf" class="btn primary-btn">Download Resume</a>
+        <a href="#projects" class="btn secondary-btn">View Projects</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About</h2>
+    <div class="content">
+        Third-year CSE student at Panimalar Engineering College (CGPA: 8.99/10).
+        Strong foundation in Java, Python, AI systems and secure software development.
+        Passionate about building scalable and impactful technology solutions.
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Java, Python</p>
+        </div>
+        <div class="card">
+            <h3>Web Technologies</h3>
+            <p>HTML, CSS, JavaScript</p>
+        </div>
+        <div class="card">
+            <h3>Tools & Databases</h3>
+            <p>MySQL, Git, GitHub, VS Code</p>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Music Web Application</h3>
+            <p>Responsive music streaming app with authentication and playlist management.</p>
+        </div>
+        <div class="card">
+            <h3>Crypto-LSB</h3>
+            <p>Secure image steganography using AES encryption and LSB embedding.</p>
+        </div>
+        <div class="card">
+            <h3>AI Market Trend Forecaster</h3>
+            <p>AI-based sentiment analysis & topic modeling system using LLM + RAG pipeline.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Oracle Java Certification</h3>
+            <p>In Progress</p>
+        </div>
+        <div class="card">
+            <h3>NPTEL Programming in Java</h3>
+            <p>Completed - 2024</p>
+        </div>
+        <div class="card">
+            <h3>NPTEL Introduction to Machine Learning</h3>
+            <p>Completed - 2025</p>
+        </div>
+        <div class="card">
+            <h3>Infosys AI Certification</h3>
+            <p>AI-Powered Market Trend & Consumer Sentiment Forecaster</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="content">
+        Email: udivyadharshiniyogitha@gmail.com <br>
+        LinkedIn: linkedin.com/in/divya-dharshini-umapathy <br>
+        GitHub: github.com/udivyadharshini-cloud <br>
+        Location: Chennai, Tamil Nadu
+    </div>
+</section>
+
+<footer>
+    © 2026 Divya Dharshini U | Portfolio
+</footer>
+
+</body>
+</html>
